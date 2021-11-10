@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test": "testcafe firefox check-logo.js",
+    "test2": "testcafe firefox click-test.js",
+    "test3": "testcafe firefox go-back.js",
+    "test4": "testcafe firefox hover-image.js",
+    "test5": "testcafe firefox random-language.js",
+    "test6": "testcafe firefox scroll-test.js"
+  },
+  "dependencies": {
+    "testcafe": "^1.17.0"
+  }
+}
