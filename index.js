@@ -33,9 +33,15 @@ test('My test', async t => {
 
     const target = Selector('#Enlaces_externos');
 
-    try {
-        await t
-        .scrollIntoView(target); 
+    const scroll = ClientFunction(function() {
+        scrollIntoView(target);
+    });
+    
+    try {  
+        await t 
+        
+        .scroll();
+        
         console.log("scroll sucessful");
     } catch (error) {
         console.log("no existe enlaces externos");
